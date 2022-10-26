@@ -240,7 +240,17 @@ y_predict_test = NB_classifier.predict(X_test)
 cm = confusion_matrix(y_test, y_predict_test)
 sns.heatmap(cm, annot=True)
 ```
-![predicting test set results]()
+![predicting test set results](predictresults.png)
+
+```
+print(classification_report(y_test, y_predict_test))
+```
+
+![classification report](classification result.png)
+
+
+
+
 
 
 
