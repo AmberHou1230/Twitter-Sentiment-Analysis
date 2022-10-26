@@ -18,5 +18,7 @@ jtplot.style(theme='monokai', context='notebook', ticks=True, grid=False)
 ```
 # Load the data
 tweets_df = pd.read_csv('twitter.csv')
+tweets_df
 ```
 
+!
