@@ -33,4 +33,29 @@ tweets_df.info()
 
 ```
 
-![tweetsDescribe]()
+![tweetsDescribe](tweetsdescribe.png)
+
+```
+# Drop the 'id' column
+tweets_df = tweets_df.drop(['id'], axis=1)
+```
+
+Perform Data Exploration
+-----------------------------
+```
+sns.heatmap(tweets_df.isnull(), yticklabels = False, cbar = False, cmap="Blues")
+```
+
+![heatmap](emptyHeatmap.png)
+
+```
+tweets_df.hist(bins = 30, figsize = (13,5), color = 'r')
+```
+
+![firstHis](firstHisRed.png)
+
+```
+sns.countplot(tweets_df['label'], label = "Count") 
+```
+
+![secondHis](2ndHisBlue.png)
