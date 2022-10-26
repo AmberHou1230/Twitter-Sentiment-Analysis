@@ -21,4 +21,16 @@ tweets_df = pd.read_csv('twitter.csv')
 tweets_df
 ```
 
-!
+![tweetsdf](tweetsdf.png)
+
+```
+tweets_df.info()
+```
+
+![tweetsInfo](tweetsInfo.png)
+
+```
+
+```
+
+![tweetsDescribe]()
